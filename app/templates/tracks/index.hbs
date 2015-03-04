@@ -1,0 +1,13 @@
+<ul>
+  {{#each track in model}}
+    <li>
+      {{#link-to 'track' track.id}}
+        {{track.titleTag}},
+        {{track.albumTag}},
+        {{track.yearTag}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No tracks found.</li>
+  {{/each}}
+</ul>
