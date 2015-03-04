@@ -1,7 +1,7 @@
 # Bpm_front
 
 ###Review:
-Ember-cli backed Ember.js front-end application based on [Bpm_host API](http://github.com/Crashtown/bpm_host)
+Ember-cli backed Ember.js front-end application based on [Bpm_host API](https://github.com/Crashtown/bpm_host)
 
 ###Features:
 execute
