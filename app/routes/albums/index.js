@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function(params) {
-    this.store.find('track', params.id);
+  model: function(){
+    return this.store.find('album');
   }
 });

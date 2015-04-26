@@ -31,8 +31,9 @@ module.exports = function(environment) {
       "font-src": "'self'",
       "connect-src": "'self' localhost:3000 ws://localhost:35729 ws://0.0.0.0:35729",
       "img-src": "'self'",
-      "style-src": "'self'",
-      "media-src": 'self'
+      "style-src": "'self' 'unsafe-inline'",
+      "media-src": "'self'",
+      "report-uri": "'self'"
     }
   }
 

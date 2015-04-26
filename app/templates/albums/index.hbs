@@ -1,0 +1,11 @@
+<ul>
+  {{#each album in model}}
+    <li>
+      {{album.name}},
+      {{album.year}},
+      {{album.coverUrl}}
+    </li>
+  {{else}}
+    <li>No albums found.</li>
+  {{/each}}
+</ul>
