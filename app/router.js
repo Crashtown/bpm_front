@@ -2,8 +2,7 @@ import Ember from 'ember';
 import config from './config/environment';
 
 var Router = Ember.Router.extend({
-  location: config.locationType,
-  rootUrl: '/collection'
+  location: config.locationType
 });
 
 Router.map(function() {
@@ -19,10 +18,11 @@ Router.map(function() {
   });
   this.resource('artists', function(){
     this.resource('artist', { path: '/:id' }, function(){
-      this.resource('edit', { path: 'edit'});
+      this.resource('edit', { path: 'edit' });
     });
   });
   this.route('collection');
+  this.route('search', { path: '/search/:query' });
 });
 
 export default Router;

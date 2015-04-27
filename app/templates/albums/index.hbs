@@ -1,9 +1,11 @@
 <ul>
   {{#each album in model}}
     <li>
-      {{album.name}},
-      {{album.year}},
-      {{album.coverUrl}}
+      {{#link-to 'album' album.id}}
+        {{album.name}},
+        {{album.year}},
+        {{album.coverUrl}}
+      {{/link-to}}
     </li>
   {{else}}
     <li>No albums found.</li>

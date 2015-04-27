@@ -1,0 +1,9 @@
+<ul>
+{{#each track in tracks}}
+  <li>
+    {{#link-to 'track' track.id}}
+      {{track.titleTag}}
+    {{/link-to}}
+  </li>
+{{/each}}
+</ul>

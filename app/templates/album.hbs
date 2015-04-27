@@ -1,1 +1,13 @@
-<h1>album</h1>
+<ul>
+  {{#each track in tracks}}
+    <li>
+      {{#link-to 'track' track.id}}
+        {{track.titleTag}},
+        {{track.albumTag}},
+        {{track.yearTag}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No tracks found.</li>
+  {{/each}}
+</ul>

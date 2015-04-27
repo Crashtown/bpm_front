@@ -1,0 +1,16 @@
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>lol</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each album in model}}
+    <tr>
+      <td {{action 'edit' album.id}}>
+        {{album.name}}
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
