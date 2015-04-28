@@ -7,7 +7,7 @@ export default Ember.Route.extend({
   },
   actions: {
     goBack: function(){
-      this.transitionTo('collection');
+      this.transitionToRoute('collection');
     }
   }
 });

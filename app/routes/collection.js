@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   },
   actions: {
     edit: function(trackId){
-      this.transitionTo('album.edit', trackId);      
+      this.transitionToRoute('album.edit', trackId);      
     }
   }
 });

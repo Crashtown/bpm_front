@@ -1,5 +1,7 @@
+<a4>{{model.count}}</a4>
 <ul>
-{{#each track in tracks}}
+
+{{#each track in controller.tracks}}
   <li>
     {{#link-to 'track' track.id}}
       {{track.titleTag}}
