@@ -2,12 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function(params){
-    Ember.$.getJSON('http://localhost:3000/api/v1/search', {q:params.query}).then(function(search){
-      console.log(search);
-      return search;1
-    });
+    return Ember.$.getJSON('http://localhost:3000/api/v1/search', {q:params.query})
   },
   setupController: function(controller, model){
-    controller.set('tracks', model.tracks);
+    this.store.pushPayload('track', { tracks: model.tracks });
+    controller.set('query', model.search.query )
+    controller.set('tracks', model.tracks )
   }
 });
