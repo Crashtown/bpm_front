@@ -18,7 +18,7 @@ Router.map(function() {
   });
   this.resource('artists', function(){
     this.resource('artist', { path: '/:id' }, function(){
-      this.resource('edit', { path: 'edit' });
+      this.route('edit', { path: 'edit' });
     });
   });
   this.route('collection');
